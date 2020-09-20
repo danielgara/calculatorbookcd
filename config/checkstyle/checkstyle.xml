@@ -4,10 +4,9 @@
      "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
 
 <module name="Checker">
-  <module name="JavadocPackage"/>
   <module name="TreeWalker">
-    <module name="AvoidStarImport"/>
-    <module name="ConstantName"/>
-    <module name="EmptyBlock"/>
-  </module>
+          <module name="JavadocType">
+               <property name="scope" value="public"/>
+          </module>
+     </module>
 </module>
