@@ -24,7 +24,7 @@ pipeline {
           }
           stage("Static code analysis") {
                steps {
-                    sh "./gradlew checkstyleMain"
+                    sh "./gradlew checkstyleMain --warning-mode=all"
                }
           }
      }
