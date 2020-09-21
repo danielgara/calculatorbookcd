@@ -39,7 +39,7 @@ pipeline {
           }
           stage("Docker build") {
                steps {
-                    sh "docker build -t danielgara/calculatorcd"
+                    sh "docker build -t danielgara/calculatorcd ."
                }
           }
      }
